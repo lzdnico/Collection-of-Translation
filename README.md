@@ -2,6 +2,7 @@
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
   - 项目基于Flask框架
   - 项目基于selenium 爬虫
+  - 速度较慢，待优化
   ![image](https://github.com/lzdnico/Collection-of-Translation/blob/master/images/1.png) 
   ![image](https://github.com/lzdnico/Collection-of-Translation/blob/master/images/2.png) 
 # 环境搭建及运行
@@ -31,7 +32,7 @@
   ```bash
   python3 api.py
   ```
-```
+
 # 联系我
   - 更新频道：https://t.me/niconewbeeeapi
   - 打赏地址:https://t.me/niconewbeeeapi/134
