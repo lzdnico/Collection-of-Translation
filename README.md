@@ -27,10 +27,14 @@
   cp -R phantomjs-2.1.1-linux-x86_64 /usr/local/share/ 
   ln -sf /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/local/bin/
   ```
-
   - 5.后台运行：
   ```bash
   python3 api.py
+  ```
+  - 6.速度太慢？申请百度API和有道API：
+  ```bash
+  修改api/apikey.py 下的翻译API_Key
+  修改api/trans.py  translate()函数的的调用方式
   ```
 
 # 联系我

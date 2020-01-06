@@ -4,6 +4,8 @@ import urllib
 import urllib.parse
 import time
 import multiprocessing
+import api.baidu
+import api.youdaoapi
 service_args=[]
 
 service_args.append('--load-images=false')  ##关闭图片加载  
@@ -78,9 +80,13 @@ def translate(input):
     try:
         ans = []
         ans.append(google(input))
-        ans.append(baidu(input))
-        ans.append(youdao(input))
+        ans.append(baidu(input))                                 #抓包方式获得百度翻译结果
+        ans.append(youdao(input))                                #抓包方式获得有道翻译结果
+        #ans.append(api.baidu.baidu(input))                        #百度api 方式
+        #ans.append(api.youdaoapi.connect(input))                  #有道api 方式
         return ans
-    except:
+    except Exception as e:
+        print(e)
         return  [0,0,0]
+
 
